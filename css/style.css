@@ -1,0 +1,560 @@
+:root{
+    --ff1: 'Raleway', sans-serif;
+    --ff2: 'Open Sans', sans-serif;
+    --ff3: 'Cardo', serif;
+    --brand: #e84545;
+    --cl-dark: #2d3033; 
+    --cl-p: #6c7279;
+    --bg-test: #53354a;
+    --bg-ft1: #3a3e64;
+    --bg-ft2: #313454;
+    --over-red: hsla(0, 78%, 59%, 0.95);
+    --over-ban: hsla(234, 26%, 23%, 0.95);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/*==========================
+ common css  end
+==========================*/
+
+.rale-reg{
+    font-family: var(--ff1);
+    font-weight: 400;
+}
+.rale-med{
+    font-family: var(--ff1);
+    font-weight: 500;
+}
+.rale-sami{
+    font-family: var(--ff1);
+    font-weight: 600;
+}
+
+.rale-bold{
+    font-family: var(--ff1);
+    font-weight: 700;
+}
+.open-reg{
+    font-family: var(--ff2);
+    font-weight: 400;
+}
+.open-bold{
+    font-family: var(--ff2);
+    font-weight: 700;
+}
+
+.cardo{
+    font-family: var(--ff3);
+    font-weight: 400;
+    font-style: italic;
+}
+
+/*==========================
+font css  end
+==========================*/
+.fs-13{
+    font-size: 13px;
+}
+
+.fs-65{
+    font-size: 65px;
+}
+
+.fs-22{
+    font-size: 22px;
+}
+
+.fs-14{
+    font-size: 14px;
+}
+.fs-36{
+    font-size: 36px;
+}
+
+.fs-28{
+    font-size: 28px;
+}
+
+
+/*==========================
+font size css  end
+==========================*/
+.text-up{
+    text-transform: uppercase;
+}
+
+.text-cap{
+    text-transform: capitalize;
+}
+.text-center{
+    text-align: center;
+}
+
+
+/*==========================
+typography css  end
+==========================*/
+.white{
+    color: #fff;
+}
+
+.bg-brand{
+    background: var(--brand);
+}
+
+.text-brand{
+    color: var(--brand);
+}
+
+.dark{
+    color: var(--cl-dark);
+}
+
+.detail{
+    color: var(--cl-p);
+}
+
+.cta-btn a{
+    line-height: 46px;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/*==========================
+helpers css  end
+==========================*/
+nav{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+
+}
+
+nav .navber{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .navber .logo{
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+nav .navber .logo img{
+    width: 100%;
+}
+
+nav .navber .nav-list{
+    height: 100px;
+    width: 600px;
+}
+
+nav .navber .nav-list ul{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+nav .navber .nav-list ul li a{
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+nav .navber .nav-list ul li:hover a{
+    color: var(--brand);
+}
+
+
+/*==========================
+nav css  end
+==========================*/
+#banner{
+    height: 750px;
+    background: url(../images/cover.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+}
+
+#banner::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--over-ban);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+#banner .banner-text{
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#banner .banner-text h1{
+    line-height: 71px;
+    padding: 0 45px;
+    margin-bottom: 20px;
+}
+
+#banner .banner-text p{
+    padding: 0 110px;
+    line-height: 33px;
+}
+
+#banner .banner-text a{
+    padding: 0 51px;
+    margin-top: 75px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#banner .banner-text a:hover{
+    background: #fff;
+    color: var(--brand);
+}
+
+/*==========================
+nav css  end
+==========================*/
+#services{
+    height: 450px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+#services .service-main{
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#services .service-main article{
+    width: 370px;
+    height: 190px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#services .service-main article:hover{
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0, 0.2);
+}
+
+#services .service-main article h5{
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+#services .service-main article p{
+    line-height: 21px;
+    padding: 0 21px;
+}
+
+/*==========================
+nav css  end
+==========================*/
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+#gallery figure{
+    width: 25%;
+    position: relative;
+}
+#gallery figure img{
+    width: 100%;
+}
+
+#gallery figure figcaption{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    background: var(--over-red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    opacity: 0;
+}
+
+#gallery figure:hover figcaption{
+    opacity: 1;
+}
+
+#gallery figure figcaption h6{
+    margin-bottom: 10px;
+}
+
+/*==========================
+gallery css  end
+==========================*/
+#team{
+    height: 580px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#team .group{
+    height: 580px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#team .group .member{
+    width: 20%;
+    height: 100%;
+}
+#team .group .member figure img{
+    width: 100%;
+    height: 100%;
+}
+
+#team .group .member figcaption h4{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#team .group .member figcaption p{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-right: 19px;
+}
+
+#team .group .member figcaption i{
+    font-size: 22px;
+    border: 1px solid #999;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+#team .group .member figcaption i:hover{
+    color: #fff;
+    background: var(--brand);
+}
+
+
+/*==========================
+team css  end
+==========================*/
+#womencover{
+    height: 500px;
+    background: #53354a;
+    display: flex;
+    margin: 100px 0px;
+}
+#womencover figure{
+    width: 50%;
+}
+
+#womencover figure img{
+    width: 100%;
+    height: 100%; 
+}
+
+#womencover figcaption{
+    width: 50%;
+    margin-left: 86px;
+}
+
+#womencover figcaption p{
+    margin-top: 110px;
+    padding: 0px 61px;
+}
+
+#womencover figcaption h6{
+    margin-top: 40px;
+    padding-left: 61px;
+    margin-bottom: 60px;
+}
+
+#womencover figcaption span{
+    margin-left: 35%;
+}
+
+#womencover figcaption i{
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+/*==========================
+2nd-cover css  end
+==========================*/
+
+#download{
+    height: 150px;
+}
+
+#download figcaption p{
+    line-height: 21px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#download figcaption a{
+    padding: 0px 51px;
+    margin-bottom: 75px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#download figcaption a:hover{
+    background: #fff;
+    color: var(--brand);
+}
+
+
+/*==========================
+download  end
+==========================*/
+#about{
+    height: 250px;
+    background: #4c5b84;
+    margin-top: 100px;
+    
+}
+
+#about .container{
+    display: flex;
+}
+
+#about figure{
+    width: 30%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#about figure p{
+    margin-top: 20px;
+    padding: 0px 100px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+#about figure span{
+    margin-top: 20px;
+}
+
+
+
+#about figure p:hover{
+    color: var(--brand);
+}
+
+#about figcaption{
+    width: 30%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#about figcaption .icon i{
+    line-height: 22.5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+#about figcaption .icon i:hover{
+    background: var(--brand);
+}
+
+/*==========================
+2nd-cover css  end
+==========================*/
+#copy{
+    height: 95px;
+    background: #3a3e64; 
+}
+
+#copy .container{
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#copy .container p{
+    padding: 0px 407px;
+}
+
+
+
+/*==========================
+copyright css  end
+==========================*/
