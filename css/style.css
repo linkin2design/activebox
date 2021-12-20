@@ -152,11 +152,24 @@ helpers css  end
 nav{
     width: 100%;
     height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+
+.nav-fix{
+    width: 100%;
+    background: var(--brand);
     position: fixed;
     left: 0;
     top: 0;
     z-index: 99999;
-
 }
 
 nav .navber{
@@ -557,4 +570,26 @@ download  end
 
 /*==========================
 copyright css  end
+==========================*/
+
+
+/*==========================
+back-to-top css 
+==========================*/
+.back-to-top{
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    display: none;
+}
+
+.back-to-top:hover{
+    color: var(--brand);
+    font-size: 65px;
+}
+
+/*==========================
+back-to-top css  end
 ==========================*/
