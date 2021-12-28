@@ -22,3 +22,9 @@ $('.back-to-top').click(function () {
         scrollTop: '0px',
     }, 2000);
 })
+
+// Preloade
+
+$(document).load(function () {
+    $('.preloader').delay(2000).fadeOut();
+});
