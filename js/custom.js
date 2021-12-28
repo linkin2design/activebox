@@ -25,6 +25,6 @@ $('.back-to-top').click(function () {
 
 // Preloade
 
-$(document).load(function () {
+$(document).ready(function () {
     $('.preloader').delay(2000).fadeOut();
 });
